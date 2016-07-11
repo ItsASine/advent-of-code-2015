@@ -1,2 +1,2 @@
 # advent-of-code-2015
-Days 1-25 of http://adventofcode.com/
+My solutions for [Advent of Code](http://adventofcode.com/) 2015 :christmas_tree:
