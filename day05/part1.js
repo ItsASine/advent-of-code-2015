@@ -33,14 +33,14 @@ var day5 = function () {
 
     strings.forEach(function (str) {
         hasEvilString = false;
-        
-        disallowedStrings.forEach(function(evilStr) {
-            if(str.includes(evilStr)) {
+
+        disallowedStrings.forEach(function (evilStr) {
+            if (str.includes(evilStr)) {
                 hasEvilString = true;
             }
         });
 
-        if(!hasEvilString) {
+        if (!hasEvilString) {
             stringAsArray = Array.from(str);
             vowelCount = 0;
             hasDouble = false;

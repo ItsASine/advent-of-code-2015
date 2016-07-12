@@ -76,7 +76,7 @@ var day6 = function () {
 
     for (k = 0; k < grid.length; k++) {
         for (h = 0; h < grid[k].length; h++) {
-            if(grid[k][h]) {
+            if (grid[k][h]) {
                 turnedOnLights++;
             }
         }

@@ -20,20 +20,20 @@
  All numbers in the elves' list are in feet. How many total square feet of wrapping paper should they order?
  */
 
-var day2 = function() {
+var day2 = function () {
     var input = require('./input.json');
     var gifts = input.giftList.split(/\n/);
     var giftMeasurements = [];
     var l, w, h;
     var wrappingPaper = 0;
 
-    gifts.forEach(function(gift) {
+    gifts.forEach(function (gift) {
         giftMeasurements = gift.split(/x/);
         l = giftMeasurements[0];
         w = giftMeasurements[1];
         h = giftMeasurements[2];
 
-        wrappingPaper += 2*l*w + 2*w*h + 2*h*l + Math.min(l*w,w*h,h*l);
+        wrappingPaper += 2 * l * w + 2 * w * h + 2 * h * l + Math.min(l * w, w * h, h * l);
     });
 
     console.log(wrappingPaper);

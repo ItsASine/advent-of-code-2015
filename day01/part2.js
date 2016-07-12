@@ -12,20 +12,20 @@
  What is the position of the character that causes Santa to first enter the basement?
  */
 
-var day1 = function() {
+var day1 = function () {
     var input = require('./input.json');
     var directions = Array.from(input.directions);
     var i = 0;
 
-    directions.forEach(function(char, index) {
-        if(char == '(') {
+    directions.forEach(function (char, index) {
+        if (char == '(') {
             i++;
-        } else if(char == ')') {
+        } else if (char == ')') {
             i--;
         }
 
-        if(i == -1) {
-            console.log(index+1);
+        if (i == -1) {
+            console.log(index + 1);
         }
     });
 };

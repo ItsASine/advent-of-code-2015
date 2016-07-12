@@ -44,10 +44,10 @@ var day5 = function () {
                 hasDouble = true;
             }
 
-            testPair = [char, stringAsArray[index+1]];
+            testPair = [char, stringAsArray[index + 1]];
             testPairString = testPair[0] + testPair[1];
 
-            if (str.includes(testPairString, index+2) || knownPairs.includes(testPair)) {
+            if (str.includes(testPairString, index + 2) || knownPairs.includes(testPair)) {
                 hasPair = true;
             }
         });

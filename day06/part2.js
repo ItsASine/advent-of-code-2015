@@ -58,7 +58,7 @@ var day6 = function () {
                         break;
                     }
                     case 'turn off': {
-                        if(grid[i][j] > 0) {
+                        if (grid[i][j] > 0) {
                             grid[i][j] -= 1;
                         }
                         break;

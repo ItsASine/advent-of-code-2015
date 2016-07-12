@@ -30,12 +30,12 @@ var day3 = function () {
     var i, j;
 
     //Loop through Santas
-    for(i = 0; i < santas; i++) {
+    for (i = 0; i < santas; i++) {
         //Santa starts at [0,0]
         x = 0;
         y = 0;
         //Loop through drunken elf's directions
-        for(j = i; j < directions.length; j += santas) {
+        for (j = i; j < directions.length; j += santas) {
             switch (directions[j]) {
                 case '^':
                     y++;

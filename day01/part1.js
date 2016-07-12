@@ -30,15 +30,15 @@
  To what floor do the instructions take Santa?
  */
 
-var day1 = function() {
+var day1 = function () {
     var input = require('./input.json');
     var directions = Array.from(input.directions);
     var i = 0;
 
-    directions.forEach(function(char) {
-        if(char == '(') {
+    directions.forEach(function (char) {
+        if (char == '(') {
             i++;
-        } else if(char == ')') {
+        } else if (char == ')') {
             i--;
         }
     });

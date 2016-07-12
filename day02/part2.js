@@ -33,8 +33,8 @@ var day2 = function () {
         w = giftMeasurements[1];
         h = giftMeasurements[2];
 
-        bow = l*w*h;
-        wrap = Math.min(2*l + 2*w, 2*w + 2*h, 2*h + 2*l);
+        bow = l * w * h;
+        wrap = Math.min(2 * l + 2 * w, 2 * w + 2 * h, 2 * h + 2 * l);
 
         ribbon += wrap + bow;
     });
