@@ -43,7 +43,7 @@ var SphericalHouses = (function() {
           }
 
           isUnique = !houses.filter(function(house) {
-            return house[0] == x && house[1] == y;
+            return house[0] === x && house[1] === y;
           })[0];
 
           if (isUnique) {
@@ -61,6 +61,6 @@ var SphericalHouses = (function() {
   };
 
   return SphericalHouses;
-})();
+}());
 
 module.exports = new SphericalHouses();

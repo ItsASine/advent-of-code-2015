@@ -13,9 +13,9 @@ var NotQuiteLisp = (function() {
       var self = this;
 
       self.directions.forEach(function(char, index) {
-        if (char == '(') {
+        if (char === '(') {
           i++;
-        } else if (char == ')') {
+        } else if (char === ')') {
           i--;
         }
 
@@ -28,7 +28,7 @@ var NotQuiteLisp = (function() {
     },
 
     basementCheck: function(i, index) {
-      if (i == -1) {
+      if (i === -1) {
         return index + 1;
       }
     },
@@ -39,6 +39,6 @@ var NotQuiteLisp = (function() {
   };
 
   return NotQuiteLisp;
-})();
+}());
 
 module.exports = new NotQuiteLisp();

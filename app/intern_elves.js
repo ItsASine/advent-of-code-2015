@@ -51,7 +51,7 @@ var InternElves = (function() {
       var hasDouble = false;
 
       stringAsArray.forEach(function(char, index) {
-        if (char == stringAsArray[index + 1]) {
+        if (char === stringAsArray[index + 1]) {
           hasDouble = true;
         }
 
@@ -60,7 +60,7 @@ var InternElves = (function() {
         }
       });
 
-      return hasDouble == true && vowelCount >= 3;
+      return hasDouble === true && vowelCount >= 3;
     },
 
     hasSplitDouble: function(string) {
@@ -69,7 +69,7 @@ var InternElves = (function() {
       var hasDouble = false;
 
       stringAsArray.forEach(function(char, index) {
-        if (char == stringAsArray[index + 2]) {
+        if (char === stringAsArray[index + 2]) {
           hasDouble = true;
         }
       });
@@ -102,6 +102,6 @@ var InternElves = (function() {
   };
 
   return InternElves;
-})();
+}());
 
 module.exports = new InternElves();

@@ -15,9 +15,9 @@ var StockingStuffer = (function() {
 
       var test = function() {
         if (!part2) {
-          return hash.slice(0, 5) != '00000';
+          return hash.slice(0, 5) !== '00000';
         } else {
-          return hash.slice(0, 6) != '000000';
+          return hash.slice(0, 6) !== '000000';
         }
       };
 
@@ -35,6 +35,6 @@ var StockingStuffer = (function() {
   };
 
   return StockingStuffer;
-})();
+}());
 
 module.exports = new StockingStuffer();

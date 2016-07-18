@@ -50,6 +50,6 @@ var AssemblyRequired = (function() {
   };
 
   return AssemblyRequired;
-})();
+}());
 
 module.exports = new AssemblyRequired();

@@ -120,6 +120,6 @@ var FireHazard = (function() {
   };
 
   return FireHazard;
-})();
+}());
 
 module.exports = new FireHazard();

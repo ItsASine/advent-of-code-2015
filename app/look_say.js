@@ -35,6 +35,6 @@ var LookSay = (function() {
   };
 
   return LookSay;
-})();
+}());
 
 module.exports = new LookSay();

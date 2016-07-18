@@ -48,6 +48,6 @@ var Matchsticks = (function() {
   };
 
   return Matchsticks;
-})();
+}());
 
 module.exports = new Matchsticks();

@@ -49,7 +49,7 @@ var CorporatePolicy = (function() {
       var z = 'z'.charCodeAt(0);
 
       for (var j = currentPassword.length - 1; j >= 0; j--) {
-        if (currentPassword[j] != z) {
+        if (currentPassword[j] !== z) {
           currentPassword[j]++;
           break;
         } else {
@@ -66,7 +66,7 @@ var CorporatePolicy = (function() {
       var l = 'l'.charCodeAt(0);
 
       return currentPassword.some(function(char) {
-        return char == i || char == o || char == l;
+        return char === i || char === o || char === l;
       });
     },
 
@@ -77,16 +77,16 @@ var CorporatePolicy = (function() {
 
       currentPassword.forEach(function(char, index) {
         //needs 3 consecutive characters
-        if (currentPassword[index + 1] == char + 1 &&
-            currentPassword[index + 2] == char + 2) {
+        if (currentPassword[index + 1] === char + 1 &&
+            currentPassword[index + 2] === char + 2) {
           hasConsecutive = true;
         }
 
         //needs 2 unique sets of doubles
-        if (currentPassword[index + 1] == char &&
-            currentPassword[index - 1] != char) {
+        if (currentPassword[index + 1] === char &&
+            currentPassword[index - 1] !== char) {
           doubles++;
-          if (doubles == 2) {
+          if (doubles === 2) {
             has2Doubles = true;
           }
         }
@@ -103,6 +103,6 @@ var CorporatePolicy = (function() {
   };
 
   return CorporatePolicy;
-})();
+}());
 
 module.exports = new CorporatePolicy();

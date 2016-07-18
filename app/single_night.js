@@ -76,7 +76,7 @@ var SingleNight = (function() {
         route.forEach(function(town, index) {
           if (index < route.length - 1) {
             routeData.forEach(function(dataArr) {
-              if (dataArr[0] == town && dataArr[1] == route[index + 1]) {
+              if (dataArr[0] === town && dataArr[1] === route[index + 1]) {
                 currentDistances.push(dataArr[2]);
               }
             });
@@ -100,6 +100,6 @@ var SingleNight = (function() {
   };
 
   return SingleNight;
-})();
+}());
 
 module.exports = new SingleNight();

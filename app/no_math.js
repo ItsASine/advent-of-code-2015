@@ -44,6 +44,6 @@ var NoMath = (function() {
   };
 
   return NoMath;
-})();
+}());
 
 module.exports = new NoMath();
