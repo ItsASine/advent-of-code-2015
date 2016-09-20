@@ -1,4 +1,4 @@
-describe('Single Night', function() {
+describe('Spherical Houses', function() {
   var SphericalHouses = require('../app/spherical_houses');
 
   describe('Part 1', function() {
